@@ -46,7 +46,6 @@ RUN sudo apt install default-jdk
 
 # Copy files: 
 # COPY deploy-container/myTool /home/coder/myTool
-
 # -----------
 
 # Port
