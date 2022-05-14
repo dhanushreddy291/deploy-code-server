@@ -35,11 +35,7 @@ RUN sudo apt install python3-pip
 RUN sudo apt install curl
 RUN curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
 RUN sudo nvm install node
-RUN sudo curl -s https://ngrok-agent.s3.amazonaws.com/ngrok.asc | sudo tee
-              /etc/apt/trusted.gpg.d/ngrok.asc >/dev/null && echo "deb
-              https://ngrok-agent.s3.amazonaws.com buster main" | sudo tee
-              /etc/apt/sources.list.d/ngrok.list && sudo apt update && sudo apt
-              install ngrok
+RUN sudo curl -s https://ngrok-agent.s3.amazonaws.com/ngrok.asc | sudo tee/etc/apt/trusted.gpg.d/ngrok.asc >/dev/null && echo "deb https://ngrok-agent.s3.amazonaws.com buster main" | sudo tee/etc/apt/sources.list.d/ngrok.list && sudo apt update && sudo apt install ngrok
 RUN ngrok config add-authtoken 1yWkOpYU4qYD8vgayUpNdRTvRTY_6Mt1Tbmc57mRo8UWTyGJq
 RUN sudo apt install default-jre
 RUN sudo apt install default-jdk      
