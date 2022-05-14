@@ -29,16 +29,17 @@ RUN sudo chown -R coder:coder /home/coder/.local
 # Install apt packages:
 # RUN sudo apt-get install -y ubuntu-make
 RUN sudo apt-get update
-RUN sudo apt install g++
-RUN sudo apt-get install wget
-RUN sudo apt-get install python3-pip
-RUN sudo apt-get install curl
+RUN sudo apt-get install -y build-essential
+RUN sudo apt-get install -y manpages-dev
+RUN sudo apt-get install -y wget
+RUN sudo apt-get install -y python3-pip
+RUN sudo apt-get install -y curl
 RUN sudo curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
 RUN sudo nvm install node
 RUN sudo curl -s https://ngrok-agent.s3.amazonaws.com/ngrok.asc | sudo tee/etc/apt/trusted.gpg.d/ngrok.asc >/dev/null && echo "deb https://ngrok-agent.s3.amazonaws.com buster main" | sudo tee/etc/apt/sources.list.d/ngrok.list && sudo apt update && sudo apt install ngrok
 RUN ngrok config add-authtoken 1yWkOpYU4qYD8vgayUpNdRTvRTY_6Mt1Tbmc57mRo8UWTyGJq
-RUN sudo apt-get install default-jre
-RUN sudo apt-get install default-jdk      
+RUN sudo apt-get install -y default-jre
+RUN sudo apt-get install -y default-jdk      
 
 # Copy files: 
 # COPY deploy-container/myTool /home/coder/myTool
