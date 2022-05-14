@@ -40,6 +40,7 @@ RUN sudo apt-get install -y manpages-dev
 RUN sudo apt-get install -y wget
 RUN sudo apt-get install -y python3-pip
 RUN sudo apt-get install -y snapd
+RUN RUN /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)" < /dev/null
 
 # Java
 # RUN sudo apt-get install -y default-jre

@@ -1,7 +1,19 @@
 {
-  "workbench.colorTheme": "Default Dark+",
   "git.postCommitCommand": "sync",
   "git.enableSmartCommit": true,
   "git.confirmSync": false,
-  "git.autofetch": true
+  "git.autofetch": true,
+  "editor.fontSize": 24,
+  "C_Cpp.default.includePath": [],
+  "terminal.integrated.fontSize": 21,
+  "diffEditor.ignoreTrimWhitespace": false,
+  "editor.formatOnSave": true,
+  "editor.fontFamily": "'Ubuntu Mono', monospace",
+  "diffEditor.wordWrap": "on",
+  "editor.wordWrap": "on",
+  "workbench.iconTheme": "material-icon-theme",
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "terminal.integrated.inheritEnv": false,
+  "workbench.colorTheme": "GitHub Dark Default",
+  "editor.unicodeHighlight.invisibleCharacters": false
 }
