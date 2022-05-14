@@ -28,6 +28,7 @@ RUN sudo chown -R coder:coder /home/coder/.local
 
 # Install apt packages:
 # RUN sudo apt-get install -y ubuntu-make
+RUN sudo apt-get update
 RUN sudo apt-get install build-essential
 RUN sudo apt-get install manpages-dev
 RUN sudo apt-get install wget
