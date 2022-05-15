@@ -38,7 +38,7 @@ RUN sudo apt-get install -y build-essential
 RUN sudo apt-get install -y manpages-dev
 RUN sudo apt-get install -y wget
 RUN sudo apt-get install -y python3-pip
-RUN sudo apt-get install python3-venv
+RUN sudo apt-get install -y python3-venv
 
 # Java
 # RUN sudo apt-get install -y default-jre
