@@ -51,7 +51,7 @@ RUN sudo apt-get install -y python3-venv
 # RUN sudo nvm install 
 
 RUN curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.34.0/install.sh | bash
-RUN sudo . ~/.nvm/nvm.sh
+RUN sudo -s source ~/.nvm/nvm.sh
 RUN ["/bin/bash", "-c", "nvm install node"]
 
 # Copy files: 
