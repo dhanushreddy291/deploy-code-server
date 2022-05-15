@@ -44,12 +44,6 @@ RUN sudo apt-get install -y python3-venv
 # RUN sudo apt-get install -y default-jre
 # RUN sudo apt-get install -y default-jdk
 
-# RUN brew install nvm 
-# RUN sudo echo "export NVM_DIR=~/.nvm" >> ~/.bash_profile
-# RUN sudo echo "source $(brew --prefix nvm)/nvm.sh" >> ~/.bash_profile
-# RUN sudo source ~/.bash_profile
-# RUN sudo nvm install 
-
 SHELL ["/bin/bash", "--login", "-i", "-c"]
 RUN curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.2/install.sh | bash
 RUN sudo -s source /root/.bashrc && nvm install node
