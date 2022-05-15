@@ -53,9 +53,6 @@ RUN sudo apt-get install -y python3-venv
 SHELL ["/bin/bash", "--login", "-i", "-c"]
 RUN curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.2/install.sh | bash
 RUN sudo -s source /root/.bashrc && nvm install node
-SHELL ["/bin/bash", "--login", "-c"]
-
-SHELL ["/bin/bash", "--login", "-i", "-c"]
 RUN npm install -g npm@latest
 RUN npm install --global yarn
 SHELL ["/bin/bash", "--login", "-c"]
