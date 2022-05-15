@@ -50,10 +50,10 @@ RUN sudo apt-get install -y python3-venv
 # RUN sudo source ~/.bash_profile
 # RUN sudo nvm install 
 
+SHELL ["/bin/bash", "--login", "-i", "-c"]
+RUN curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.2/install.sh | bash
+RUN source /root/.bashrc && nvm install node
 SHELL ["/bin/bash", "--login", "-c"]
-
-RUN curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash
-RUN nvm install node
 
 # Copy files: 
 # COPY deploy-container/myTool /home/coder/myTool
