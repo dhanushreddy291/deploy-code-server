@@ -55,6 +55,9 @@ RUN curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.2/install.sh | b
 RUN sudo -s source /root/.bashrc && nvm install node
 SHELL ["/bin/bash", "--login", "-c"]
 
+RUN npm install -g npm@latest
+RUN npm install --global yarn
+
 # Copy files: 
 # COPY deploy-container/myTool /home/coder/myTool
 # -----------
