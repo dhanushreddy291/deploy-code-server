@@ -41,8 +41,8 @@ RUN sudo apt-get install -y python3-pip
 RUN sudo apt-get install -y python3-venv
 
 # Java
-# RUN sudo apt-get install -y default-jre
-# RUN sudo apt-get install -y default-jdk
+RUN sudo apt-get install -y default-jre
+RUN sudo apt-get install -y default-jdk
 
 SHELL ["/bin/bash", "--login", "-i", "-c"]
 RUN curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.2/install.sh | bash
