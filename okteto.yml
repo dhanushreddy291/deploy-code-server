@@ -1,0 +1,4 @@
+build:
+  frontend:
+    dockerfile: Dockerfile
+    target: dev
